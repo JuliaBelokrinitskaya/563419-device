@@ -45,3 +45,50 @@
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff")
 }
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 1200px;
+  min-height: 100vh;
+
+  /* Sticky footer IE fix */
+  height: 320px;
+}
+
+.page__main {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.page__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
