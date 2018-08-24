@@ -98,13 +98,20 @@ body {
   margin: 0 auto;
 }
 
-
+.page__section {
+  margin-bottom: 70px;
+}
 
 
 
 
 .categories {
-
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
 }
 
 .categories__list {
@@ -134,11 +141,6 @@ body {
   padding-top: 193px;
   padding-bottom: 41px;
 
-  font-family: "Gilroy";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.18px;
   text-decoration: none;
   color: #000000;
 
@@ -222,11 +224,73 @@ body {
 }
 
 
+
+
+
+
+
+
+.brands {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin-top: 0;
+  margin-bottom: -24px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.brands__item {
+  margin-right: 40px;
+  margin-bottom: 24px;
+}
+
+.brands__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brands__logo {
+  display: block;
+
+  width: 260px;
+  height: 100px;
+
+  overflow: hidden;
+  outline: none;
+}
+
+.brands__logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  opacity: 0.2;
+}
+
+.brands__logo:hover .brands__logo-image,
+.brands__logo:focus .brands__logo-image {
+  margin-top: -100px;
+
+  opacity: 1;
+}
+
+
+
+
+
+
 header,
 footer,
 section {
-  /*box-sizing: border-box;*/
-  /*overflow: hidden;*/
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 header {
@@ -239,6 +303,9 @@ header {
   /*height: 282px;*/
 }
 
+.services {
+  height: 428px;
+}
 
 /*html {
   background-image: url("../prev/index.png");
