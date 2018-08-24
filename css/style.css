@@ -145,6 +145,8 @@ body {
   color: #000000;
 
   outline: none;
+
+  transition: color ease-in-out 0.1s;
 }
 
 .categories__link:focus {
@@ -166,6 +168,8 @@ body {
   display: block;
   width: 100%;
   height: 160px;
+
+  transition: all ease-in-out 0.1s;
 }
 
 .categories__link::before {
@@ -272,6 +276,8 @@ body {
   height: auto;
 
   opacity: 0.2;
+
+  transition: opacity ease-in-out 0.1s;
 }
 
 .brands__logo:hover .brands__logo-image,
