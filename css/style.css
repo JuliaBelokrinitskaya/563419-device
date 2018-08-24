@@ -289,10 +289,7 @@ body {
 
 
 
-
-
-
-header,
+/*header,
 footer,
 section {
   box-sizing: border-box;
@@ -305,13 +302,9 @@ header {
   background-clip: content-box;
 }
 
-.categories {
-  /*height: 282px;*/
-}
-
 .services {
   height: 428px;
-}
+}*/
 
 /*html {
   background-image: url("../prev/index.png");
