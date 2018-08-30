@@ -72,6 +72,49 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  position: relative;
+
+  display: inline-block;
+  min-width: 260px;
+  padding-top: 8px;
+  padding-right: 12.4px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  color: #000000;
+
+  background: linear-gradient(0deg, #f0c52e, #f0c52e);
+  background-repeat: no-repeat;
+  background-position: 0 16px;
+  background-size: 100% calc(100% - 32px);
+  border: none;
+  cursor: pointer;
+
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-position: 0 0;
+  background-size: 100% 100%;
+  outline: none;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -102,8 +145,43 @@ body {
   margin-bottom: 70px;
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
 
+.columns__item {
+  position: relative;
 
+  padding-top: 121px;
+  padding-bottom: 82px;
+}
+
+.columns__item::before {
+  content: "";
+
+  position: absolute;
+  top: 69px;
+  left: 0;
+
+  display: block;
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.columns__title {
+  margin-top: 0;
+  margin-bottom: 43px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+  color: #000000;
+}
 
 .categories {
   font-family: "Gilroy";
@@ -287,6 +365,70 @@ body {
   opacity: 1;
 }
 
+.about-us {
+  width: 480px;
+}
+
+.about-us__text {
+  margin-bottom: 30px;
+}
+
+.about-us__list {
+  margin-top: 65px;
+  margin-bottom: 55px;
+  padding-left: 0;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+
+  list-style: none;
+}
+
+.about-us__list-item {
+  position: relative;
+
+  padding-left: 35px;
+}
+
+.about-us__list-item::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 1px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.contacts {
+  width: 560px;
+}
+
+.contacts__text {
+  margin-bottom: 40px;
+}
+
+.contacts__map {
+  display: block;
+  width: 560px;
+  height: 222px;
+  margin-bottom: 69px;
+}
+
+.contacts__map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 /*header,
