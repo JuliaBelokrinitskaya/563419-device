@@ -414,13 +414,15 @@ body {
 }
 
 .contacts__text {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .contacts__map {
-  display: block;
+  position: relative;
+
   width: 560px;
   height: 222px;
+  margin-top: 0;
   margin-bottom: 69px;
 }
 
@@ -431,7 +433,7 @@ body {
 }
 
 
-/*header,
+header,
 footer,
 section {
   box-sizing: border-box;
@@ -446,9 +448,9 @@ header {
 
 .services {
   height: 428px;
-}*/
+}
 
-/*html {
+html {
   background-image: url("../prev/index.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -462,7 +464,7 @@ header {
 
 body {
   opacity: 0.5;
-}*/
+}
 
 /*html {
   background-image: url("../prev/catalog.png");
