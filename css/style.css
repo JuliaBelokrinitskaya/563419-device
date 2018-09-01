@@ -702,6 +702,7 @@ body {
 }
 
 .page-footer__copyright {
+  margin-left: auto;
   padding-bottom: 1px;
 }
 
@@ -718,7 +719,7 @@ body {
 .page-footer__copyright-logo {
   display: block;
   width: 27px;
-  height: auto;
+  height: 35px;
 }
 
 
@@ -745,8 +746,8 @@ header {
 }*/
 
 
-/*
-html {
+
+/*html {
   background-image: url("../prev/index.png");
   background-position: top center;
   background-repeat: no-repeat;
