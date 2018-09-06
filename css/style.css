@@ -480,12 +480,12 @@ body {
   color: #000000;
 }
 
-.catalog-menu__link:hover,
+.catalog-menu__link[href]:hover,
 .catalog-menu__link:focus {
   opacity: 0.6;
 }
 
-.catalog-menu__link:active {
+.catalog-menu__link[href]:active {
   outline: none;
   opacity: 0.3;
 }
