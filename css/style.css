@@ -58,7 +58,8 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden,
+.dropdown {
   position: absolute;
 
   width: 1px;
@@ -70,6 +71,20 @@ body {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.dropdown {
+  z-index: 20;
+}
+
+:hover ~ .dropdown,
+:focus ~ .dropdown,
+.dropdown:hover {
+  height: auto;
+  margin: 0;
+
+  clip: auto;
+  overflow: visible;
 }
 
 .btn {
@@ -444,6 +459,37 @@ body {
   opacity: 0.3;
 }
 
+.catalog-menu {
+  width: 160px;
+  margin-top: 0;
+  margin-right: 40px;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-menu:first-child {
+  width: 200px;
+}
+
+.catalog-menu__link {
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-menu__link:hover,
+.catalog-menu__link:focus {
+  opacity: 0.6;
+}
+
+.catalog-menu__link:active {
+  outline: none;
+  opacity: 0.3;
+}
+
 .page-header {
   padding-top: 21px;
   padding-bottom: 44px;
@@ -476,6 +522,8 @@ body {
 }
 
 .page-header__site-menu li:first-child {
+  position: relative;
+
   width: 500px;
   margin-right: 40px;
 }
@@ -485,6 +533,21 @@ body {
   margin-left: auto;
 }
 
+.page-header__catalog-dropdown {
+  top: 30px;
+  left: -60px;
+
+  display: flex;
+
+  width: 1160px;
+  padding-top: 21px;
+  padding-right: 60px;
+  padding-bottom: 34px;
+  padding-left: 60px;
+  box-sizing: border-box;
+
+  background-color: #f7e296;
+}
 
 .main-nav {
   display: flex;
@@ -638,7 +701,7 @@ body {
 .slider__toggle:nth-of-type(1):focus ~ .promo__controls .promo__controls-item:nth-child(1),
 .slider__toggle:nth-of-type(2):focus ~ .promo__controls .promo__controls-item:nth-child(2),
 .slider__toggle:nth-of-type(3):focus ~ .promo__controls .promo__controls-item:nth-child(3) {
-  box-shadow: 0 0 0 1px #cccccc;
+  box-shadow: inset 0 0 0 3px #f0c52e;
 }
 
 .promo__list {
@@ -1335,7 +1398,7 @@ body {
 
 
 /*html {
-  background-image: url("../prev/index.png");
+  background-image: url("../prev/index-1.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
