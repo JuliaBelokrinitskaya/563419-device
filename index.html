@@ -16,6 +16,109 @@
     <main class="page__main">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 
+      <section class="promo page__section page__wrapper">
+        <h2 class="visually-hidden">Рекомендуемые товары</h2>
+
+        <div class="slider">
+          <input class="slider__toggle visually-hidden" id="promo-1" type="radio" name="promo" checked>
+          <input class="slider__toggle visually-hidden" id="promo-2" type="radio" name="promo">
+          <input class="slider__toggle visually-hidden" id="promo-3" type="radio" name="promo">
+
+          <div class="promo__controls">
+            <label class="promo__controls-item" for="promo-1">
+              <span class="visually-hidden">Товар 1</span>
+            </label>
+            <label class="promo__controls-item" for="promo-2">
+              <span class="visually-hidden">Товар 2</span>
+            </label>
+            <label class="promo__controls-item" for="promo-3">
+              <span class="visually-hidden">Товар 3</span>
+            </label>
+          </div>
+
+          <ol class="promo__list slider__list">
+            <li class="promo__item slider__item">
+              <h3 class="visually-hidden">Монопод</h3>
+              <div class="promo__image-wrapper">
+                <img class="promo__image promo__image--monopod" src="img/promo-1.png" width="384" height="486" alt="Палка для селфи">
+              </div>
+              <div class="promo__info">
+                <b class="promo__lead">Делай селфи,<br> как Бен Стиллер!</b>
+                <p class="promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="promo__btn btn" href="#">Подробнее</a>
+                <table class="parameters">
+                  <caption class="visually-hidden">Параметры товара</caption>
+                  <thead class="parameters__header">
+                    <tr>
+                      <th class="parameters__name">Длина палки</th>
+                      <th class="parameters__name">Вес палки</th>
+                      <th class="parameters__name">Материал</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="parameters__value">8,5 м</td>
+                      <td class="parameters__value">5 кг</td>
+                      <td class="parameters__value">Карбон</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="promo__item slider__item">
+              <h3 class="visually-hidden">Фитнес-браслет</h3>
+              <div class="promo__image-wrapper">
+                <img class="promo__image promo__image--fitness" src="img/promo-2.png" width="345" height="485" alt="Фитнес-браслет">
+              </div>
+              <div class="promo__info">
+                <b class="promo__lead">Худеем<br> правильно!</b>
+                <p class="promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.</p>
+                <a class="promo__btn btn" href="#">Подробнее</a>
+                <table class="parameters">
+                  <caption class="visually-hidden">Параметры товара</caption>
+                  <thead class="parameters__header">
+                    <tr>
+                      <th class="parameters__name">Без подзарядки</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="parameters__value">48 часов</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="promo__item slider__item">
+              <h3 class="visually-hidden">Квадрокоптер</h3>
+              <div class="promo__image-wrapper">
+                <img class="promo__image promo__image--copter" src="img/promo-3.png" width="526" height="334" alt="Квадрокоптер">
+              </div>
+              <div class="promo__info">
+                <b class="promo__lead">Порхает как бабочка, жалит как пчела!</b>
+                <p class="promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
+                <a class="promo__btn btn" href="#">Подробнее</a>
+                <table class="parameters">
+                  <caption class="visually-hidden">Параметры товара</caption>
+                  <thead class="parameters__header">
+                    <tr>
+                      <th class="parameters__name">Дальность полета</th>
+                      <th class="parameters__name">Радиус поражения</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="parameters__value">800 м</td>
+                      <td class="parameters__value">50 м</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <section class="categories page__wrapper">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories__list">
@@ -42,7 +145,6 @@
 
       <section class="services page__section">
         <h2 class="visually-hidden">Услуги</h2>
-
         <div class="services__slider slider page__wrapper">
           <input class="slider__toggle visually-hidden" id="service-1" type="radio" name="service" checked>
           <input class="slider__toggle visually-hidden" id="service-2" type="radio" name="service">
