@@ -8,9 +8,47 @@
   </head>
 
   <body class="page">
-    <header class="page__header page__wrapper">
-      <img src="img/logo-device.svg">
-      <a href="catalog.html">Catalog</a>
+    <header class="page__header page-header page__wrapper">
+      <nav class="main-nav">
+        <a class="page-header__logo main-nav__logo logo">
+          <img class="logo__image" src="img/logo-device.svg" width="163" height="36" alt="Интернет-магазин Device">
+        </a>
+
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+          <input class="search-form__input" id="site-search" type="text" name="search" placeholder="Поиск по сайту" required>
+          <button class="search-form__btn" type="submit">Найти</button>
+        </form>
+
+        <ul class="page-header__user-menu user-menu">
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--login" href="#">Войти</a>
+          </li>
+        </ul>
+
+        <ul class="page-header__user-actions user-menu">
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--cart" href="#">Корзина</a>
+          </li>
+        </ul>
+
+        <ul class="page-header__site-menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--dropdown" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Доставка</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Гарантия</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page__main">
@@ -40,7 +78,7 @@
             <li class="promo__item slider__item">
               <h3 class="visually-hidden">Монопод</h3>
               <div class="promo__image-wrapper">
-                <img class="promo__image promo__image--monopod" src="img/promo-1.png" width="384" height="486" alt="Палка для селфи">
+                <img class="promo__image" src="img/promo-1.png" width="560" height="524" alt="Палка для селфи">
               </div>
               <div class="promo__info">
                 <b class="promo__lead">Делай селфи,<br> как Бен Стиллер!</b>
@@ -68,7 +106,7 @@
             <li class="promo__item slider__item">
               <h3 class="visually-hidden">Фитнес-браслет</h3>
               <div class="promo__image-wrapper">
-                <img class="promo__image promo__image--fitness" src="img/promo-2.png" width="345" height="485" alt="Фитнес-браслет">
+                <img class="promo__image" src="img/promo-2.png" width="560" height="524" alt="Фитнес-браслет">
               </div>
               <div class="promo__info">
                 <b class="promo__lead">Худеем<br> правильно!</b>
@@ -92,7 +130,7 @@
             <li class="promo__item slider__item">
               <h3 class="visually-hidden">Квадрокоптер</h3>
               <div class="promo__image-wrapper">
-                <img class="promo__image promo__image--copter" src="img/promo-3.png" width="526" height="334" alt="Квадрокоптер">
+                <img class="promo__image" src="img/promo-3.png" width="560" height="524" alt="Квадрокоптер">
               </div>
               <div class="promo__info">
                 <b class="promo__lead">Порхает как бабочка, жалит как пчела!</b>
@@ -229,42 +267,33 @@
       <div class="page__wrapper">
         <div class="page-footer__top">
           <a class="logo">
-            <span class="visually-hidden">Интернет-магазин Device</span>
-            <svg class="page-footer__logo-image logo__image" xmlns="http://www.w3.org/2000/svg" width="163" height="36" viewBox="0 0 201 42" fill="#ffc600">
-              <g>
-                <path d="m 16.926287,0.18129 q 8.7,0 14.52,6.06 5.88,6 5.88,14.94001 0,8.94 -5.88,15 -5.82,6 -14.52,6 l -16.79999968,0 0,-42.00001 16.79999968,0 z m 0,32.76001 q 4.98,0 8.04,-3.18 3.12,-3.24 3.12,-8.58 0,-5.34001 -3.12,-8.52001 -3.06,-3.24 -8.04,-3.24 l -7.1999996,0 0,23.52001 7.1999996,0 z" />
-                <path d="m 52.642537,32.9413 16.8,0 0,9.24 -26.4,0 0,-42.00001 26.1,0 0,9.24 -16.5,0 0,6.96 15,0 0,9.12001 -15,0 0,7.44 z" />
-                <path d="M 85.140349,42.1813 71.460347,0.18129 l 10.500002,0 9.3,30.90001 9.300001,-30.90001 10.5,0 -13.680001,42.00001 -12.24,0 z" />
-                <path d="m 114.92973,0.18129 9.6,0 0,42.00001 -9.6,0 0,-42.00001 z" />
-                <path d="m 151.98753,43.0213 q -9.42,0 -15.66,-6.24 -6.18,-6.3 -6.18,-15.6 0,-9.30001 6.18,-15.54001 6.24,-6.3 15.66,-6.3 5.64,0 10.44,2.64 4.8,2.58 7.56,7.08 l -8.28,4.8 q -1.38,-2.46 -3.96,-3.78 -2.58,-1.38 -5.76,-1.38 -5.58,0 -8.94,3.42 -3.3,3.42 -3.3,9.06001 0,5.64 3.3,9.06 3.36,3.42 8.94,3.42 3.18,0 5.76,-1.38 2.64,-1.38 3.96,-3.78 l 8.28,4.8 q -2.7,4.5 -7.5,7.14 -4.8,2.58 -10.5,2.58 z" />
-                <path d="m 184.34661,32.9413 16.8,0 0,9.24 -26.4,0 0,-42.00001 26.1,0 0,9.24 -16.5,0 0,6.96 15,0 0,9.12001 -15,0 0,7.44 z" />
-              </g>
-            </svg>
+            <img class="logo__image" src="img/logo-device-color.svg" width="163" height="36" alt="Интернет-магазин Device">
           </a>
-          <ul class="page-footer__user-menu">
-            <li class="page-footer__user-item">
-              <a class="page-footer__user-link page-footer__user-link--login" href="#">Войти</a>
+
+          <ul class="page-footer__user-menu user-menu user-menu--contrast">
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__link--login" href="#">Войти</a>
             </li>
-            <li class="page-footer__user-item">
-              <a class="page-footer__user-link page-footer__user-link--compare" href="#">Сравнить</a>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__link--compare" href="#">Сравнить</a>
             </li>
-            <li class="page-footer__user-item">
-              <a class="page-footer__user-link page-footer__user-link--cart" href="#">Корзина</a>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__link--cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
 
         <div class="page-footer__middle">
           <p class="page-footer__contacts">г. Москва, ул. Строителей, 15</p>
-          <ul class="page-footer__conditions-menu">
-            <li class="page-footer__conditions-item">
-              <a class="page-footer__conditions-link" href="#">Доставка</a>
+          <ul class="page-footer__conditions-menu site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Доставка</a>
             </li>
-            <li class="page-footer__conditions-item">
-              <a class="page-footer__conditions-link" href="#">Гарантия</a>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Гарантия</a>
             </li>
-            <li class="page-footer__conditions-item">
-              <a class="page-footer__conditions-link" href="#">Контакты</a>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Контакты</a>
             </li>
           </ul>
           <p class="page-footer__contacts">Тел.: +7 (495) 495-95-95</p>
