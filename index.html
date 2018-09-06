@@ -42,6 +42,33 @@
 
       <section class="services page__section">
         <h2 class="visually-hidden">Услуги</h2>
+
+        <div class="services__slider slider page__wrapper">
+          <input class="slider__toggle visually-hidden" id="service-1" type="radio" name="service" checked>
+          <input class="slider__toggle visually-hidden" id="service-2" type="radio" name="service">
+          <input class="slider__toggle visually-hidden" id="service-3" type="radio" name="service">
+
+          <div class="services__controls">
+            <label class="services__btn btn" for="service-1">Доставка</label>
+            <label class="services__btn btn" for="service-2">Гарантия</label>
+            <label class="services__btn btn" for="service-3">Кредит</label>
+          </div>
+
+          <ul class="services__list slider__list">
+            <li class="services__item services__item--delivery slider__item">
+              <h3 class="services__title">Доставка</h3>
+              <p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services__item services__item--warranty slider__item">
+              <h3 class="services__title">Гарантия</h3>
+              <p class="services__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services__item services__item--credit slider__item">
+              <h3 class="services__title">Кредит</h3>
+              <p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="brands page__wrapper">
