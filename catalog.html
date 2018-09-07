@@ -86,10 +86,43 @@
         </ul>
       </div>
 
+      <div class="catalog-columns--header">
+        <div class="catalog-columns__wrapper page__wrapper">
+          <p class="catalog-columns__narrow catalog-columns__title">Фильтр:</p>
+
+          <section class="catalog-columns__wide sort">
+            <h2 class="catalog-columns__title sort__title">Сортировка:</h2>
+            <ul class="sort__type-list">
+              <li class="sort__type-item">
+                <a class="sort__type-link sort__type-link--current">По цене</a>
+              </li>
+              <li class="sort__type-item">
+                <a class="sort__type-link" href="#">По типу</a>
+              </li>
+              <li class="sort__type-item">
+                <a class="sort__type-link" href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sort__order-list">
+              <li class="sort__order-item">
+                <a class="sort__order-link sort__order-link--up" href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+              </li>
+              <li class="sort__order-item">
+                <a class="sort__order-link sort__order-link--down sort__order-link--current">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
       <div class="catalog-columns">
         <div class="catalog-columns__wrapper page__wrapper">
           <section class="catalog-columns__narrow filter">
-            <h2 class="filter__title">Фильтр:</h2>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter__section">
                 <legend class="filter__section-title">Стоимость</legend>
@@ -156,10 +189,9 @@
             </form>
           </section>
 
-          <div class="catalog-columns__wide">
-            <section></section>
-            <section></section>
-          </div>
+          <section class="catalog-columns__wide catalog">
+            <h2 class="visually-hidden">Каталог</h2>
+          </section>
         </div>
       </div>
     </main>

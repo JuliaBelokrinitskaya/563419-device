@@ -1308,6 +1308,10 @@ body {
   background-position: 0 0;
 }
 
+.catalog-columns--header {
+  background-image: linear-gradient(90deg, #dbdbdb 50%, #ebebeb 50%);
+}
+
 .catalog-columns__wrapper {
   display: flex;
   align-items: stretch;
@@ -1326,16 +1330,14 @@ body {
   background-color: #ffffff;
 }
 
-.filter {
-  padding-top: 22px;
-  padding-bottom: 77px;
-
-  color: #000000;
+.catalog-columns--header .catalog-columns__wide {
+  background-color: #ebebeb;
 }
 
-.filter__title {
+.catalog-columns__title {
   margin-top: 0;
   margin-bottom: 24px;
+  padding-top: 22px;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -1343,6 +1345,114 @@ body {
   line-height: 24px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.sort {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sort__title {
+  margin-right: 51px;
+}
+
+.sort__type-list,
+.sort__order-list {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort__type-list {
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  width: 460px;
+  margin-top: 18px;
+  margin-right: 40px;
+  margin-bottom: 22px;
+}
+
+.sort__type-item {
+  margin-right: 29px;
+}
+
+.sort__type-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.sort__type-link[href]:hover,
+.sort__type-link:focus {
+  opacity: 0.6;
+}
+
+.sort__type-link[href]:active,
+.sort__type-link--current {
+  opacity: 1;
+  outline: none;
+}
+
+.sort__order-list {
+  justify-content: flex-end;
+
+  width: 60px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sort__order-item {
+  margin-left: 9px;
+}
+
+.sort__order-item:last-child {
+  margin-right: -5px;
+}
+
+.sort__order-link {
+  display: block;
+  width: 11px;
+  height: 10px;
+  padding: 5px;
+
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  background-size: 11px 10px;
+
+  opacity: 0.2;
+}
+
+.sort__order-link[href]:hover,
+.sort__order-link:focus {
+  opacity: 0.4;
+}
+
+.sort__order-link[href]:active,
+.sort__order-link--current {
+  opacity: 1;
+  outline: none;
+}
+
+.sort__order-link--up {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.sort__order-link--down {
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.filter {
+  padding-bottom: 77px;
+
+  color: #000000;
 }
 
 .filter__form {
@@ -1736,7 +1846,7 @@ body {
 
 
 
-/*html {
+html {
   background-image: url("../prev/index-1.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1754,5 +1864,5 @@ body {
 
 html {
   background-image: url("../prev/catalog.png");
-}*/
+}
 
