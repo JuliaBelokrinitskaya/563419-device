@@ -1682,6 +1682,7 @@ body {
   align-items: flex-start;
 
   margin: 0;
+  margin-bottom: -11px;
   padding: 0;
 
   list-style: none;
@@ -1846,12 +1847,101 @@ body {
   outline: none;
 }
 
+.pagination {
+  display: flex;
 
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
 
+  background-color: #ebebeb;
+}
 
+.pagination__wrapper {
+  width: 200px;
+}
 
+.pagination__wrapper:last-child {
+  text-align: right;
+}
 
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 320px;
+  margin: 0 auto -12px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+
+.pagination__link {
+  padding-left: 3px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  transition: all 0.2 ease-in-out;
+}
+
+.pagination__link--page {
+  display: block;
+
+  opacity: 0.3;
+}
+
+.pagination__link--page[href]:hover,
+.pagination__link--page:focus {
+  opacity: 0.6;
+}
+
+.pagination__link--page[href]:active,
+.pagination__link--current {
+  opacity: 1;
+  outline: none;
+}
+
+.pagination__link--back,
+.pagination__link--next {
+  display: inline-block;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-bottom: 22px;
+  padding-left: 29px;
+
+  vertical-align: top;
+}
+
+.pagination__link--back[href]:hover,
+.pagination__link--next[href]:hover,
+.pagination__link--back:focus,
+.pagination__link--next:focus {
+  background-color: #d8d8d8;
+}
+
+.pagination__link--back[href]:active,
+.pagination__link--next[href]:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
 
 .page-footer {
   padding-top: 65px;
@@ -2022,7 +2112,7 @@ body {
 
 
 /*html {
-  background-image: url("../prev/index-1.png");
+  background-image: url("../prev/catalog.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -2035,8 +2125,4 @@ body {
 
 body {
   opacity: 0.5;
-}
-
-html {
-  background-image: url("../prev/catalog.png");
 }*/
