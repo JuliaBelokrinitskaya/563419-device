@@ -87,7 +87,80 @@
       </div>
 
       <div class="catalog-columns">
+        <div class="catalog-columns__wrapper page__wrapper">
+          <section class="catalog-columns__narrow filter">
+            <h2 class="filter__title">Фильтр:</h2>
+            <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter__section">
+                <legend class="filter__section-title">Стоимость</legend>
+                <div class="filter__range range">
+                  <div class="range__selected"></div>
+                  <button class="range__slider range__slider--min" type="button" aria-label="От">
+                    <span class="range__label range__label--min">от 0</span>
+                  </button>
+                  <button class="range__slider range__slider--max" type="button" aria-label="До">
+                    <span class="range__label range__label--max">до 5000</span>
+                  </button>
+                  <label class="visually-hidden">
+                    Минимальная стоимость
+                    <input type="number" name="price_min" value="0">
+                  </label>
+                  <label class="visually-hidden">
+                    Максимальная стоимость
+                    <input type="number" name="price_max" value="5000">
+                  </label>
+                </div>
+              </fieldset>
 
+              <fieldset class="filter__section">
+                <legend class="filter__section-title">Цвет</legend>
+                <ul class="filter__options">
+                  <li>
+                    <input class="filter__option visually-hidden" id="color-black" type="checkbox" name="color_black" checked>
+                    <label class="filter__option-label filter__option-label--check" for="color-black">Черный</label>
+                  </li>
+                  <li>
+                    <input class="filter__option visually-hidden" id="color-white" type="checkbox" name="color_white">
+                    <label class="filter__option-label filter__option-label--check" for="color-white">Белый</label>
+                  </li>
+                  <li>
+                    <input class="filter__option visually-hidden" id="color-blue" type="checkbox" name="color_blue" checked>
+                    <label class="filter__option-label filter__option-label--check" for="color-blue">Синий</label>
+                  </li>
+                  <li>
+                    <input class="filter__option visually-hidden" id="color-red" type="checkbox" name="color_red" checked>
+                    <label class="filter__option-label filter__option-label--check" for="color-red">Красный</label>
+                  </li>
+                  <li>
+                    <input class="filter__option visually-hidden" id="color-pink" type="checkbox" name="color_pink">
+                    <label class="filter__option-label filter__option-label--check" for="color-pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="filter__section">
+                <legend class="filter__section-title">Bluetooth</legend>
+                <ul class="filter__options">
+                  <li>
+                    <input class="filter__option visually-hidden" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
+                    <label class="filter__option-label filter__option-label--radio" for="bluetooth-yes">Есть</label>
+                  </li>
+                  <li>
+                    <input class="filter__option visually-hidden" id="bluetooth-no" type="radio" name="bluetooth" value="no">
+                    <label class="filter__option-label filter__option-label--radio" for="bluetooth-no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="filter__btn btn" type="submit">Показать</button>
+            </form>
+          </section>
+
+          <div class="catalog-columns__wide">
+            <section></section>
+            <section></section>
+          </div>
+        </div>
       </div>
     </main>
 
