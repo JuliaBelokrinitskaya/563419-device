@@ -339,5 +339,27 @@
         </div>
       </div>
     </footer>
+
+    <section class="write-us modal modal--write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us__field">
+          <label class="write-us__label" for="write-us-name">Ваше имя:</label>
+          <input class="write-us__input" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us__field">
+          <label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
+          <input class="write-us__input" id="write-us-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="write-us__field write-us__field--message">
+          <label class="write-us__label" for="write-us-message">Текст письма:</label>
+          <textarea class="write-us__textarea" id="write-us-message" cols="78" rows="4" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="write-us__btn btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>
