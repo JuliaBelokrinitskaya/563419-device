@@ -1671,6 +1671,130 @@ body {
   left: -22px;
 }
 
+.catalog {
+  padding-top: 69px;
+  padding-bottom: 77px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 46px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.catalog__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  opacity: 0.6;
+}
+
+.catalog__link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.catalog__title {
+  max-width: 260px;
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog__label {
+  position: absolute;
+  top: 28px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding-top: 17px;
+  padding-left: 2px;
+  box-sizing: border-box;
+
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.catalog__price {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+}
+
+.catalog__image-wrapper {
+  order: -1;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding: 0;
+
+  background-color: #eeeeee;
+}
+
+.catalog__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .page-footer {
   padding-top: 65px;
   padding-bottom: 66px;
