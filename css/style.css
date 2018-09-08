@@ -2123,7 +2123,7 @@ body {
 }
 
 .modal--write-us {
-  /*display: none;*/
+  display: none;
 
   width: 960px;
   padding-top: 93px;
@@ -2131,6 +2131,11 @@ body {
   padding-bottom: 78px;
   padding-left: 100px;
   box-sizing: border-box;
+}
+
+.modal--map {
+  width: 960px;
+  padding: 0;
 }
 
 .modal__close {
@@ -2255,24 +2260,13 @@ body {
   opacity: 0.4;
 }
 
-
 .write-us__btn {
   min-width: 200px;
   margin-top: 8px;
 }
 
-/*html {
-  background-image: url("../prev/index-1.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+.map__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-@media (max-width: 1100px) {
-  html {
-    background-position: -90px top;
-  }
-}
-
-body {
-  opacity: 0.5;
-}*/
