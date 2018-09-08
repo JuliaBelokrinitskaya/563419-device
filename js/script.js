@@ -1,13 +1,16 @@
 var contactsBtn = document.querySelector(".contacts__btn");
 var modalWriteUs = document.querySelector(".modal--write-us");
-var modalWriteUsClose = modalWriteUs.querySelector(".modal__close");
-var writeUsForm = modalWriteUs.querySelector(".write-us__form");
-var writeUsName = writeUsForm.querySelector("[name=name]");
-var writeUsEmail = writeUsForm.querySelector("[name=email]");
-var writeUsMessage = writeUsForm.querySelector("[name=message]");
+
 var mapLink = document.querySelector(".contacts__map-link");
 var modalMap = document.querySelector(".modal--map");
-var modalMapClose = modalMap.querySelector(".modal__close");
+
+var searchFormInput = document.querySelector(".search-form__input");
+var searchFormBtn = document.querySelector(".search-form__btn");
+
+var dropdownMenu = document.querySelector(".page-header__catalog-dropdown");
+var menuItems = dropdownMenu.querySelectorAll(".catalog-menu__link");
+
+var catalogItems = document.querySelectorAll(".catalog__item");
 
 var storageSupported = true;
 var storageName = "";
@@ -21,6 +24,12 @@ try {
 }
 
 if (contactsBtn && modalWriteUs) {
+  var modalWriteUsClose = modalWriteUs.querySelector(".modal__close");
+  var writeUsForm = modalWriteUs.querySelector(".write-us__form");
+  var writeUsName = writeUsForm.querySelector("[name=name]");
+  var writeUsEmail = writeUsForm.querySelector("[name=email]");
+  var writeUsMessage = writeUsForm.querySelector("[name=message]");
+
   contactsBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
     modalWriteUs.classList.add("modal--opened");
@@ -68,6 +77,8 @@ if (contactsBtn && modalWriteUs) {
 }
 
 if (mapLink && modalMap) {
+  var modalMapClose = modalMap.querySelector(".modal__close");
+
   mapLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     modalMap.classList.add("modal--opened");
@@ -86,3 +97,37 @@ if (mapLink && modalMap) {
     }
   });
 }
+
+searchFormBtn.addEventListener("focus", function (evt) {
+  searchFormInput.classList.add("search-form__input--focus");
+});
+searchFormBtn.addEventListener("blur", function (evt) {
+  searchFormInput.classList.remove("search-form__input--focus");
+});
+
+[].forEach.call(menuItems, function (menuItem) {
+  menuItem.addEventListener("focus", function (evt) {
+    dropdownMenu.classList.add("dropdown--hover");
+  });
+  menuItem.addEventListener("blur", function (evt) {
+    dropdownMenu.classList.remove("dropdown--hover");
+  });
+});
+
+[].forEach.call(catalogItems, function (catalogItem) {
+  var catalogCartBtn = catalogItem.querySelector(".catalog__btn");
+  var catalogCompareBtn = catalogItem.querySelector(".catalog__compare-btn");
+
+  catalogCartBtn.addEventListener("focus", function (evt) {
+    catalogItem.classList.add("catalog__item--hover");
+  });
+  catalogCompareBtn.addEventListener("focus", function (evt) {
+    catalogItem.classList.add("catalog__item--hover");
+  });
+  catalogCartBtn.addEventListener("blur", function (evt) {
+    catalogItem.classList.remove("catalog__item--hover");
+  });
+  catalogCompareBtn.addEventListener("blur", function (evt) {
+    catalogItem.classList.remove("catalog__item--hover");
+  });
+});
