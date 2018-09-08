@@ -2122,10 +2122,17 @@ body {
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 
   transform: translate(-50%, -50%);
+
+  animation-name: popup;
+  animation-duration: 0.6s;
 }
 
 .modal--opened {
   display: block;
+}
+
+.modal--invalid {
+  animation-name: shake;
 }
 
 .modal--write-us {
@@ -2140,6 +2147,8 @@ body {
 .modal--map {
   width: 960px;
   padding: 0;
+
+  animation-name: popup-bottom;
 }
 
 .modal__close {
@@ -2273,4 +2282,62 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@keyframes popup {
+  0% {
+    top: -4000px;
+  }
+
+  70% {
+    top: 55%;
+  }
+
+  90% {
+    top: 48%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes popup-bottom {
+  0% {
+    top: 4000px;
+  }
+
+  70% {
+    top: 45%;
+  }
+
+  90% {
+    top: 52%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-52%, -50%) rotate(-2deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-48%, -50%) rotate(2deg);
+  }
 }

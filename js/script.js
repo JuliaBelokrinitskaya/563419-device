@@ -77,4 +77,12 @@ if (mapLink && modalMap) {
     evt.preventDefault();
     modalMap.classList.remove("modal--opened");
   });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalMap.classList.contains("modal--opened")) {
+        modalMap.classList.remove("modal--opened");
+      }
+    }
+  });
 }
