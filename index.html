@@ -269,11 +269,11 @@
           <h2 class="columns__title">Контакты</h2>
           <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p class="contacts__map">
-            <a href="#">
+            <a class="contacts__map-link" href="map.html">
               <img class="contacts__map-image" src="img/map-small.jpg" width="560" height="222" alt="Наш офис по адресу: город Москва, улица Строителей, дом 15">
             </a>
           </p>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="contacts__btn btn" href="feedback.html">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -357,7 +357,7 @@
         </p>
         <button class="write-us__btn btn" type="submit">Отправить</button>
       </form>
-      <button class="modal__close">
+      <button class="modal__close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
@@ -365,9 +365,11 @@
     <section class="map modal modal--map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img class="map__image" src="img/map-big.jpg" width="960" height="559" alt="Наш офис по адресу: город Москва, улица Строителей, дом 15">
-      <button class="modal__close">
+      <button class="modal__close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

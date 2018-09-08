@@ -2114,6 +2114,8 @@ body {
   left: 50%;
   z-index: 100;
 
+  display: none;
+
   color: #000000;
 
   background-color: #ffffff;
@@ -2122,9 +2124,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.modal--write-us {
-  display: none;
+.modal--opened {
+  display: block;
+}
 
+.modal--write-us {
   width: 960px;
   padding-top: 93px;
   padding-right: 100px;
