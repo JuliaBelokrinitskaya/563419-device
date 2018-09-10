@@ -1316,6 +1316,7 @@ body {
 
 .about-us__text {
   margin-bottom: 30px;
+  padding-right: 2px;
 }
 
 .about-us__list {
@@ -1873,6 +1874,35 @@ body {
   margin-right: 0;
 }
 
+.catalog__item--new::before {
+  content: "New";
+
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  z-index: 1;
+
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding-top: 17px;
+  padding-left: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
 .catalog__link {
   text-decoration: none;
   color: #000000;
@@ -1898,32 +1928,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
-}
-
-.catalog__label {
-  position: absolute;
-  top: 28px;
-  right: 27px;
-
-  width: 60px;
-  height: 60px;
-  margin: 0;
-  padding-top: 17px;
-  padding-left: 2px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.25px;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.2);
-
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
 }
 
 .catalog__price {
@@ -2006,6 +2010,7 @@ body {
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.2px;
+  vertical-align: top;
   color: #000000;
 
   background: none;
