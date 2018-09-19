@@ -1,0 +1,13 @@
+{
+  "name": "device",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Интернет-магазин Device. Design by HTML Academy",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JuliaBelokrinitskaya/device.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
