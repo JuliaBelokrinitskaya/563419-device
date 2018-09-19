@@ -1,5 +1,5 @@
-.DS_Store
 .directory
+.DS_Store
 .idea
 .vscode
 *.ai
@@ -10,5 +10,3 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-
-prev/
