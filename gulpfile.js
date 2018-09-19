@@ -1,5 +1,16 @@
 'use strict';
 
 var
-  gulp = require('gulp')
+  gulp = require('gulp'),
+  del = require('del')
 ;
+
+gulp.task('clean', function() {
+  return del([
+    'css',
+    'fonts',
+    'img',
+    'js',
+    '*.html'
+  ]);
+});

@@ -8,6 +8,7 @@
     "url": "git@github.com:JuliaBelokrinitskaya/device.git"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1"
   }
 }
