@@ -28,6 +28,13 @@ gulp.task('clean', function() {
   ]);
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('src/fonts/**', {
+      base: 'src'
+    })
+    .pipe(gulp.dest('.'));
+});
+
 gulp.task('styles-compile', function () {
   return gulp.src('src/sass/style.scss')
     .pipe(plumber())
@@ -66,6 +73,7 @@ gulp.task('html', function () {
 gulp.task('build', function (done) {
   return run(
     'clean',
+    'fonts',
     'styles',
     'html',
     done
