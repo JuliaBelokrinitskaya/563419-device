@@ -29,10 +29,9 @@ gulp.task('clean', function() {
 });
 
 gulp.task('styles-compile', function () {
-  return gulp.src('src/sass/style.sass')
+  return gulp.src('src/sass/style.scss')
     .pipe(plumber())
     .pipe(sass({
-      indentedSyntax: true,
       outputStyle: 'expanded'
     }))
     .pipe(gulp.dest('src/css'))
@@ -82,6 +81,6 @@ gulp.task('serve', function () {
     ui: false
   });
 
-  gulp.watch('src/**/*.sass', ['styles']);
+  gulp.watch('src/**/*.scss', ['styles']);
   gulp.watch('src/**/*.pug', ['html']);
 });
